@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Predictor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="logo">📖 StudyLounge</div>
+  <div>
+    <a href="index.html">🏠</a>
+    <a href="profile.html">👤</a>
+  </div>
+</header>
+
+<div class="container">
+
+  <h1>Grade Predictor</h1>
+
+  <div class="card">
+
+    <label>Study Hours: <span id="hVal">15</span></label>
+    <input type="range" id="h" min="0" max="40" value="15">
+
+    <label>Attendance: <span id="aVal">90</span>%</label>
+    <input type="range" id="a" min="0" max="100" value="90">
+
+    <label>Previous Avg: <span id="pVal">75</span>%</label>
+    <input type="range" id="p" min="0" max="100" value="75">
+
+    <button class="primary" onclick="predict()">Predict</button>
+    <h2 id="result"></h2>
+
+  </div>
+
+  <!-- CALCULATOR -->
+  <div class="card">
+    <h3>Percentage Calculator</h3>
+    <input id="marks" placeholder="Marks">
+    <input id="total" placeholder="Total">
+    <button class="primary" onclick="calc()">Calculate</button>
+    <p id="percent"></p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+  </html>
